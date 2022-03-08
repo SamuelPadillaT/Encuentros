@@ -15,7 +15,7 @@ import U1a7 from "./components/home/homeAdmin/components/contenido/actividades/a
 import U1a8 from "./components/home/homeAdmin/components/contenido/actividades/actividadesU1/a8/u1a8";
 import U1a9 from "./components/home/homeAdmin/components/contenido/actividades/actividadesU1/a9/u1a9";
 import U1a10 from './components/home/homeAdmin/components/contenido/actividades/actividadesU1/a10/u1a10';
-
+//Hola
 const auth = getAuth(firebaseApp);
 
 const App  = () => {
