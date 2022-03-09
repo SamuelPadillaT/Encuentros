@@ -18,6 +18,12 @@ import U1a9 from "./components/home/homeAdmin/components/contenido/actividades/a
 import U1a10 from './components/home/homeAdmin/components/contenido/actividades/actividadesU1/a10/u1a10';
 //import unidad 2
 import U2a1 from "./components/home/homeAdmin/components/contenido/actividades/actividadesU2/a1/u2a1";
+import U2a2 from "./components/home/homeAdmin/components/contenido/actividades/actividadesU2/a2/u2a2";
+import U2a3 from "./components/home/homeAdmin/components/contenido/actividades/actividadesU2/a3/u2a3";
+import U2a4 from "./components/home/homeAdmin/components/contenido/actividades/actividadesU2/a4/u2a4";
+import U2a5 from "./components/home/homeAdmin/components/contenido/actividades/actividadesU2/a5/u2a5";
+import U2a6 from "./components/home/homeAdmin/components/contenido/actividades/actividadesU2/a6/u2a6";
+import U2a7 from "./components/home/homeAdmin/components/contenido/actividades/actividadesU2/a7/u2a7";
 const auth = getAuth(firebaseApp);
 
 const App  = () => {
@@ -51,6 +57,12 @@ const MyRouter = () => {
             <Route path="/U1actividad_9" element={<U1a9/>} />
             <Route path="/U1actividad_10" element={<U1a10/>} />
             <Route path="/U2actividad_1" element={<U2a1/>} />
+            <Route path="/U2actividad_2" element={<U2a2/>} />
+            <Route path="/U2actividad_3" element={<U2a3/>} />
+            <Route path="/U2actividad_4" element={<U2a4/>} />
+            <Route path="/U2actividad_5" element={<U2a5/>} />
+            <Route path="/U2actividad_6" element={<U2a6/>} />
+            <Route path="/U2actividad_7" element={<U2a7/>} />
         </Routes>
     );
 }
