@@ -282,7 +282,7 @@ class registrarCuenta extends Component {
         
         for(var i = 1; i < admin.numeroCuentas + 1; i++){
             const userId = admin.usuariosAsociados[i].userId2;
-            
+            var esAdmin = 0;
             
             const user = await get(child(dbRef, `users/${userId}`)).then((snapshot) => {
                 if (snapshot.exists()) {
@@ -296,6 +296,9 @@ class registrarCuenta extends Component {
                         password: currentPass.password,
                         uid: userId}
                     dataTemp.push(dato2);
+                    if(currentPass.rol == 'admin'){
+                        esAdmin = 1;
+                    }
                     return snapshot.val();
                     
                 } else {
@@ -305,6 +308,35 @@ class registrarCuenta extends Component {
               }).catch((error) => {
                 console.error(error);
               });
+              if(esAdmin == 1){
+                  console.log('es admin')
+                for(var j = 1; j < user.numeroCuentas + 1; j++){
+                    const userId2 = user.usuariosAsociados[j].userId2;
+                    console.log(userId2);
+                    const user2 = await get(child(dbRef, `users/${userId2}`)).then((snapshot) => {
+                        if (snapshot.exists()) {
+                            console.log(snapshot.val());
+                            const currentPass = snapshot.val();
+                            const dato2 = {nombre: currentPass.nombre,
+                                apellido: currentPass.apellido,
+                                id: currentPass.id,
+                                rol: currentPass.rol,
+                                email: currentPass.email,
+                                password: currentPass.password,
+                                uid: userId}
+                            dataTemp.push(dato2);
+                            
+                            return snapshot.val();
+                            
+                        } else {
+                            console.log("No data available");
+                            return null;
+                        }
+                      }).catch((error) => {
+                        console.error(error);
+                      });
+                }
+              } 
               
         }
         console.log(this.columnas);
