@@ -4,7 +4,7 @@ import PropTypes from 'prop-types'
 class U1a2 extends Component{
   render(){
     return(
-      <div>Holaaaaaa</div>
+      <div>Unidad1 Actvidad 2</div>
     );
   }
 }
