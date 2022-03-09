@@ -33,6 +33,14 @@ import U3a5 from "./components/home/homeAdmin/components/contenido/actividades/a
 import U3a6 from "./components/home/homeAdmin/components/contenido/actividades/actividadesU3/a6/u3a6";
 import U3a7 from "./components/home/homeAdmin/components/contenido/actividades/actividadesU3/a7/u3a7";
 import U3a8 from "./components/home/homeAdmin/components/contenido/actividades/actividadesU3/a8/u3a8";
+//import unidad 4
+import U4a1 from "./components/home/homeAdmin/components/contenido/actividades/actividadesU4/a1/u4a1";
+import U4a2 from "./components/home/homeAdmin/components/contenido/actividades/actividadesU4/a2/u4a2";
+import U4a3 from "./components/home/homeAdmin/components/contenido/actividades/actividadesU4/a3/u4a3";
+import U4a4 from "./components/home/homeAdmin/components/contenido/actividades/actividadesU4/a4/u4a4";
+import U4a5 from "./components/home/homeAdmin/components/contenido/actividades/actividadesU4/a5/u4a5";
+import U4a6 from "./components/home/homeAdmin/components/contenido/actividades/actividadesU4/a6/u4a6";
+import U4a7 from "./components/home/homeAdmin/components/contenido/actividades/actividadesU4/a7/u4a7";
 
 
 const auth = getAuth(firebaseApp);
@@ -86,6 +94,14 @@ const MyRouter = () => {
             <Route path="/U3actividad_6" element={<U3a6/>} />
             <Route path="/U3actividad_7" element={<U3a7/>} />
             <Route path="/U3actividad_8" element={<U3a8/>} />
+
+            <Route path="/U4actividad_1" element={<U4a1/>} />
+            <Route path="/U4actividad_2" element={<U4a2/>} />
+            <Route path="/U4actividad_3" element={<U4a3/>} />
+            <Route path="/U4actividad_4" element={<U4a4/>} />
+            <Route path="/U4actividad_5" element={<U4a5/>} />
+            <Route path="/U4actividad_6" element={<U4a6/>} />
+            <Route path="/U4actividad_7" element={<U4a7/>} />
         </Routes>
     );
 }
