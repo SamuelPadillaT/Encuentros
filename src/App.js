@@ -24,6 +24,17 @@ import U2a4 from "./components/home/homeAdmin/components/contenido/actividades/a
 import U2a5 from "./components/home/homeAdmin/components/contenido/actividades/actividadesU2/a5/u2a5";
 import U2a6 from "./components/home/homeAdmin/components/contenido/actividades/actividadesU2/a6/u2a6";
 import U2a7 from "./components/home/homeAdmin/components/contenido/actividades/actividadesU2/a7/u2a7";
+//import unidad 3
+import U3a1 from "./components/home/homeAdmin/components/contenido/actividades/actividadesU3/a1/u3a1";
+import U3a2 from "./components/home/homeAdmin/components/contenido/actividades/actividadesU3/a2/u3a2";
+import U3a3 from "./components/home/homeAdmin/components/contenido/actividades/actividadesU3/a3/u3a3";
+import U3a4 from "./components/home/homeAdmin/components/contenido/actividades/actividadesU3/a4/u3a4";
+import U3a5 from "./components/home/homeAdmin/components/contenido/actividades/actividadesU3/a5/u3a5";
+import U3a6 from "./components/home/homeAdmin/components/contenido/actividades/actividadesU3/a6/u3a6";
+import U3a7 from "./components/home/homeAdmin/components/contenido/actividades/actividadesU3/a7/u3a7";
+import U3a8 from "./components/home/homeAdmin/components/contenido/actividades/actividadesU3/a8/u3a8";
+
+
 const auth = getAuth(firebaseApp);
 
 const App  = () => {
@@ -45,7 +56,9 @@ const App  = () => {
 const MyRouter = () => {
     return(
         <Routes>
+            
             <Route path="/" element={<Home/>} />
+
             <Route path="/U1actividad_1" element={<U1a1/>} />
             <Route path="/U1actividad_2" element={<U1a2/>} />
             <Route path="/U1actividad_3" element={<U1a3/>} />
@@ -56,6 +69,7 @@ const MyRouter = () => {
             <Route path="/U1actividad_8" element={<U1a8/>} />
             <Route path="/U1actividad_9" element={<U1a9/>} />
             <Route path="/U1actividad_10" element={<U1a10/>} />
+
             <Route path="/U2actividad_1" element={<U2a1/>} />
             <Route path="/U2actividad_2" element={<U2a2/>} />
             <Route path="/U2actividad_3" element={<U2a3/>} />
@@ -63,6 +77,15 @@ const MyRouter = () => {
             <Route path="/U2actividad_5" element={<U2a5/>} />
             <Route path="/U2actividad_6" element={<U2a6/>} />
             <Route path="/U2actividad_7" element={<U2a7/>} />
+
+            <Route path="/U3actividad_1" element={<U3a1/>} />
+            <Route path="/U3actividad_2" element={<U3a2/>} />
+            <Route path="/U3actividad_3" element={<U3a3/>} />
+            <Route path="/U3actividad_4" element={<U3a4/>} />
+            <Route path="/U3actividad_5" element={<U3a5/>} />
+            <Route path="/U3actividad_6" element={<U3a6/>} />
+            <Route path="/U3actividad_7" element={<U3a7/>} />
+            <Route path="/U3actividad_8" element={<U3a8/>} />
         </Routes>
     );
 }
