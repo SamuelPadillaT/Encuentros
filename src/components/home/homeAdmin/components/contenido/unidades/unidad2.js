@@ -4,7 +4,7 @@ import {Div, H3, H4, H5} from '../styles';
 const unidad2 = () => {
     return (
         <div>
-            <H4>Tengo una familia que me quiere (Temario)</H4><br/>
+            <Link to="/U2actividad_1" target="_blank"><H4>Tengo una familia que me quiere (Temario)</H4></Link><br/>
             <H5>- Tengo una familia que me quiere</H5><br/>
             <H5>- ¡Huy, qué rico! ¡Cuántas frutas!</H5><br/>
             <H5>- ¿Bombero o policía?</H5><br/>

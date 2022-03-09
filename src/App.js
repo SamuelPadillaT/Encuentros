@@ -5,6 +5,7 @@ import firebaseApp from './components/firebase/credenciales'
 import {getAuth, onAuthStateChanged} from "firebase/auth"
 import { BrowserRouter } from "react-router-dom";
 import { Routes, Route } from "react-router-dom";
+//Import unidad 1
 import U1a1 from "./components/home/homeAdmin/components/contenido/actividades/actividadesU1/a1/u1a1";
 import U1a2 from "./components/home/homeAdmin/components/contenido/actividades/actividadesU1/a2/u1a2";
 import U1a3 from "./components/home/homeAdmin/components/contenido/actividades/actividadesU1/a3/u1a3";
@@ -15,7 +16,8 @@ import U1a7 from "./components/home/homeAdmin/components/contenido/actividades/a
 import U1a8 from "./components/home/homeAdmin/components/contenido/actividades/actividadesU1/a8/u1a8";
 import U1a9 from "./components/home/homeAdmin/components/contenido/actividades/actividadesU1/a9/u1a9";
 import U1a10 from './components/home/homeAdmin/components/contenido/actividades/actividadesU1/a10/u1a10';
-//Hola
+//import unidad 2
+import U2a1 from "./components/home/homeAdmin/components/contenido/actividades/actividadesU2/a1/u2a1";
 const auth = getAuth(firebaseApp);
 
 const App  = () => {
@@ -48,6 +50,7 @@ const MyRouter = () => {
             <Route path="/U1actividad_8" element={<U1a8/>} />
             <Route path="/U1actividad_9" element={<U1a9/>} />
             <Route path="/U1actividad_10" element={<U1a10/>} />
+            <Route path="/U2actividad_1" element={<U2a1/>} />
         </Routes>
     );
 }
